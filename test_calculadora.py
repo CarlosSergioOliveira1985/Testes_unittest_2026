@@ -36,8 +36,8 @@ class TesCalculadora(unittest.TestCase):
     def test_subtrai_5_e_5_deve_retornar_0(self):
             self.assertEqual(subtrai(5,5),0)
     
-    def test_soma_5_negativo_e_5_deve_retornar_0(self):
-        self.assertEqual(subtrai(-5,5),-10)
+    def test_subtrai_5_negativo_e_5_deve_retornar_0(self):
+            self.assertEqual(subtrai(-5,5),-10) #type ignore
 
     def test_subtrai_varias_entradas(self):
         x_y_saidas =(
@@ -55,11 +55,11 @@ class TesCalculadora(unittest.TestCase):
                 self.assertEqual(subtrai(x,y),saida)
 
 
-    def test_soma_x_nao_int_ou_float_deve_retornar_assertion_error(self):
+    def test_subtrai_x_nao_int_ou_float_deve_retornar_assertion_error(self):
         with self.assertRaises(AssertionError):
             subtrai('11',0)
 
-    def test_soma_y_nao_int_ou_float_deve_retornar_assertion_error(self):
+    def test_subtrai_y_nao_int_ou_float_deve_retornar_assertion_error(self):
         with self.assertRaises(AssertionError):
             subtrai(11,'0')
 
