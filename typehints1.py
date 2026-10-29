@@ -19,13 +19,13 @@ pessoa3:MeuDict = {'nome': 'Carlos' ,  'sobrenome':'Oliveira' , 'idade': 30, 'l'
 UserId = NewType('UserId', int)
 user_id = UserId(356255789453)
 
-def retorna_funcao(funcao: Callable[[], None]) -> Callable:
+def retorna_funcao(funcao: Callable[[], None]) -> Callable[[], None]:
     return funcao
 
 def fala_oi():
     print("oi")
 
-def retorna_funcao2(funcao: Callable[[int,int], int]) -> Callable:
+def retorna_funcao2(funcao: Callable[[int,int], int]) -> Callable[[int,int], int]:
     return funcao
 
 
