@@ -53,3 +53,4 @@ def iterar2(sequencia:Iterable[int]):
 
 print(iterar([1,2,3,4,5,6]))
 print(iterar2([1,2,3,4,5,6]))
+
